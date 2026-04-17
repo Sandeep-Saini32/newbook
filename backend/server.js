@@ -21,7 +21,7 @@ const cloudinarykey="633214675758312"
 
 const cloudName="dwtvuglpw"
 
-const cloud=cloudinary.config({
+cloudinary.config({
    cloud_name:cloudName,
    api_key:cloudinarykey,
    api_secret:cloudniaryysecret
@@ -31,16 +31,10 @@ const cloud=cloudinary.config({
 
 
 const mystorage=new CloudinaryStorage({
-    cloudinary:cloudinary.config({
-   cloud_name:cloudName,
-   api_key:cloudinarykey,
-   api_secret:cloudniaryysecret
-
-
-}),
+    cloudinary:cloudinary,
     params:{
         folder:"Bookstore",
-        allowed_formats:["jpg","png","jpeg","webp"]
+        allowed_format:["jpg","png","jpeg","webp"]
     }
 }) 
 
