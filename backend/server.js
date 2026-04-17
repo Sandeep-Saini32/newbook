@@ -2,7 +2,7 @@ const express = require("express")
 const mongoose = require("mongoose")
 const cors = require("cors")
 const multer=require("multer")
- const {Cloudinarystorage}=require('multer-storage-cloudinary')
+const { CloudinaryStorage } = require("multer-storage-cloudinary");
 const cloudinary=require("cloudinary").v2
 const fs= require("fs")
 const { useEffect } = require("react")
@@ -30,7 +30,7 @@ const cloud=cloudinary.config({
 })
 
 
-const mystorage=new Cloudinarystorage({
+const mystorage=new CloudinaryStorage({
     cloudinary:cloud,
     params:{
         folder:"Bookstore",
