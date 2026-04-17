@@ -2,6 +2,8 @@ const express = require("express")
 const mongoose = require("mongoose")
 const cors = require("cors")
 const multer=require("multer")
+ const {Cloudinarystorage}=require('multer-storage-cloudinary')
+const cloudinary=require("cloudinary").v2
 const fs= require("fs")
 const { useEffect } = require("react")
 const { runInNewContext } = require("vm")
@@ -11,6 +13,30 @@ const corsoption={
     origin:"https://newbook-ofyv.vercel.app",
     Credentials:true
 }
+
+
+const cloudniaryysecret ="nORy3_jZKsmiuIQoZ4QFXTF9aLY"
+
+const cloudinarykey="633214675758312"
+
+const cloudName="dwtvuglpw"
+
+const cloud=cloudinary.config({
+   cloud_name:cloudName,
+   api_key:cloudinarykey,
+   api_secret:cloudniaryysecret
+
+
+})
+
+
+const mystorage=new Cloudinarystorage({
+    cloudinary:cloud,
+    params:{
+        folder:"Bookstore",
+        allowed_format:["jpg","png","jpeg","webp"]
+    }
+}) 
 
 app.use(cors(corsoption))
 
@@ -106,7 +132,7 @@ const storage=multer.diskStorage({
     }
 })
 
-const upload=multer({storage:storage})
+const upload=multer({storage:mystorage})
 
 
 
