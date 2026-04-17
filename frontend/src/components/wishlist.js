@@ -23,7 +23,7 @@ getsavewish(getid)
 
 const getsavewish=async(userid)=>{
 
-const wishdata= await fetch(`https://newbook-fd60.onrender.com0/api/getwishlist/${userid}`,{
+const wishdata= await fetch(`https://newbook-fd60.onrender.com/api/getwishlist/${userid}`,{
 method:"Get"
 
 })
@@ -47,7 +47,7 @@ if(wishdata){
 // for delete
   const delwishproducts=async(id)=>{
 
-          const result = await fetch(`https://newbook-fd60.onrender.com0/api/dellwishpro/${id}`, {
+          const result = await fetch(`https://newbook-fd60.onrender.com/api/dellwishpro/${id}`, {
             method: "DELETE"
 
         })

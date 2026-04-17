@@ -28,7 +28,7 @@ export const Product = () => {
     }, [])
 
     const gett = async () => {
-        const savedata = await fetch("https://newbook-fd60.onrender.com0/api/getfile", {
+        const savedata = await fetch("https://newbook-fd60.onrender.com/api/getfile", {
             method: "Get"
 
         })
@@ -66,7 +66,7 @@ productdata.append("pic",productfile)
 // productdata.append("homeoption",homeoption)
 
 
-const result=await fetch("https://newbook-fd60.onrender.com0/api/productinfo",{
+const result=await fetch("https://newbook-fd60.onrender.com/api/productinfo",{
 method:"Post",
 body:productdata
 
@@ -121,7 +121,7 @@ proget()
 
     const proget=async()=>{
 
-const savedata=await fetch("https://newbook-fd60.onrender.com0/api/getdata",{
+const savedata=await fetch("https://newbook-fd60.onrender.com/api/getdata",{
     method:"Get"
 })
 
@@ -143,7 +143,7 @@ else{
 // for delete
 //     const prodell=async(id)=>{
 
-//    const result = await fetch(`https://newbook-fd60.onrender.com0/api/prodell/${id}`, {
+//    const result = await fetch(`https://newbook-fd60.onrender.com/api/prodell/${id}`, {
 //             method: "Delete"
 
 //         })
@@ -199,7 +199,7 @@ const prodell = async (id) => {
 
     if (result.isConfirmed) {
       try {
-        const response = await fetch(`https://newbook-fd60.onrender.com0/api/prodell/${id}`, {
+        const response = await fetch(`https://newbook-fd60.onrender.com/api/prodell/${id}`, {
           method: "DELETE"
         });
 
@@ -270,7 +270,7 @@ formdata.append("productdetail",productdetail)
 formdata.append("pic",productfile)
 // formdata.append("homeoption",homeoption)
 
-const result=await fetch(`https://newbook-fd60.onrender.com0/api/proupdate/${id}`,{
+const result=await fetch(`https://newbook-fd60.onrender.com/api/proupdate/${id}`,{
 method:"PUT",
 body:formdata
 })

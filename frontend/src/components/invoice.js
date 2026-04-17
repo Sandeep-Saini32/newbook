@@ -37,7 +37,7 @@ const id = params.get("id")
 
     const savecheckget = async () => {
 
-        const savecheck = await fetch(`https://newbook-fd60.onrender.com0/api/savecheckout/${id}`, {
+        const savecheck = await fetch(`https://newbook-fd60.onrender.com/api/savecheckout/${id}`, {
 
             method: "Get"
 
@@ -90,7 +90,7 @@ const id = params.get("id")
 
     // if(id){
 
-    //     fetch(`https://newbook-fd60.onrender.com0/api/savecheckout/${id}`)
+    //     fetch(`https://newbook-fd60.onrender.com/api/savecheckout/${id}`)
     //     .then(res=> res.json())
     // .then(result=>{
     //     if(result.statuscode===1)

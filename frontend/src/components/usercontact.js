@@ -14,7 +14,7 @@ reviewget()
 
 const reviewget=async()=>{
 
-const answer=await fetch("https://newbook-fd60.onrender.com0/api/getreview",{
+const answer=await fetch("https://newbook-fd60.onrender.com/api/getreview",{
 
 method:"Get",
 

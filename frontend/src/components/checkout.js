@@ -31,7 +31,7 @@ useEffect(()=>{
 
 const cartget=async()=>{
 
-    const savecart= await fetch(`https://newbook-fd60.onrender.com0/api/savecart/${id}`,{
+    const savecart= await fetch(`https://newbook-fd60.onrender.com/api/savecart/${id}`,{
 
 method:"GET"
 
@@ -97,7 +97,7 @@ tqnt:item.qnt
 
 
                 //  alert(savecart.productname)
-const result=await fetch(`https://newbook-fd60.onrender.com0/api/checkout/${id}`,{
+const result=await fetch(`https://newbook-fd60.onrender.com/api/checkout/${id}`,{
 method:"Post",
 body:JSON.stringify(checkdata),
 

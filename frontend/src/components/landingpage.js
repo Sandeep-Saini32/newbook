@@ -22,7 +22,7 @@ saveget()
 
 const saveget=async()=>{
 
-const savedata=await fetch("https://newbook-fd60.onrender.com0/api/getfile",{
+const savedata=await fetch("https://newbook-fd60.onrender.com/api/getfile",{
 method:"Get"
 
 })
@@ -58,7 +58,7 @@ getcatproduct()
 
 const getcatproduct=async()=>{
 
-    const getcatprodata=await fetch("https://newbook-fd60.onrender.com0/api/cathomepro",{
+    const getcatprodata=await fetch("https://newbook-fd60.onrender.com/api/cathomepro",{
 meythod:"Get"
 
 })
@@ -94,7 +94,7 @@ getmuysteryproduct()
 
 const getmuysteryproduct=async()=>{
 
-    const getmuysteryprodata=await fetch("https://newbook-fd60.onrender.com0/api/muysterypro",{
+    const getmuysteryprodata=await fetch("https://newbook-fd60.onrender.com/api/muysterypro",{
 meythod:"Get"
 
 })
@@ -128,7 +128,7 @@ getlatestproduct()
 
 const getlatestproduct=async()=>{
 
-    const getlatestprodata=await fetch("https://newbook-fd60.onrender.com0/api/latestpro",{
+    const getlatestprodata=await fetch("https://newbook-fd60.onrender.com/api/latestpro",{
 method:"Get"
 
 })
@@ -172,7 +172,7 @@ getbestsellerpro()
 
 const getbestsellerpro=async()=>{
 
-    const getbestprodata=await fetch("https://newbook-fd60.onrender.com0/api/bestpro",{
+    const getbestprodata=await fetch("https://newbook-fd60.onrender.com/api/bestpro",{
 meythod:"Get"
 
 })
@@ -257,7 +257,7 @@ getrandomproduct()
 
 const getrandomproduct=async()=>{
 
-const getrandomprodata=await fetch("https://newbook-fd60.onrender.com0/api/randompro",{
+const getrandomprodata=await fetch("https://newbook-fd60.onrender.com/api/randompro",{
 method:"Get"
 
 

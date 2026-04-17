@@ -10,7 +10,7 @@ const [cmessage,setcmessage]=useState("")
 const added =async()=>{
 const cdata={cname,cemail,cmessage}
 
-const result=await fetch("https://newbook-fd60.onrender.com0/api/contact",{
+const result=await fetch("https://newbook-fd60.onrender.com/api/contact",{
 
 method:"post",
 body:JSON.stringify(cdata),

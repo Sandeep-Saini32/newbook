@@ -14,7 +14,7 @@ gett()
 
 const gett=async()=>{
 
-const result=await fetch("https://newbook-fd60.onrender.com0/api/getorderinfo",{
+const result=await fetch("https://newbook-fd60.onrender.com/api/getorderinfo",{
 
 method:"Get"
 

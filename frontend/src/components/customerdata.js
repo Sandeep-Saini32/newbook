@@ -18,7 +18,7 @@ gett()
 
 const gett=async()=>{
 
-const result=await fetch("https://newbook-fd60.onrender.com0/api/getuserdata",{
+const result=await fetch("https://newbook-fd60.onrender.com/api/getuserdata",{
 
 method:"Get"
 
@@ -46,7 +46,7 @@ const changeusertype=async(id,currenttype)=>{
 
 
 const newtype=currenttype==="admin"?"user":"admin"
-const  result=await fetch(`https://newbook-fd60.onrender.com0/api/usertype/${id}`,{
+const  result=await fetch(`https://newbook-fd60.onrender.com/api/usertype/${id}`,{
 method:"Put",
 body:JSON.stringify({userType:newtype}),
 headers:{

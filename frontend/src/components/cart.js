@@ -32,7 +32,7 @@ const cartget=async(userid)=>{
     if(!userid) return
     
 
-    const savecart= await fetch(`https://newbook-fd60.onrender.com0/api/savecart/${userid}`,{
+    const savecart= await fetch(`https://newbook-fd60.onrender.com/api/savecart/${userid}`,{
 
 method:"GET"
 
@@ -71,7 +71,7 @@ const handleQuantityChange=async(index,change)=>{
     newcartdata[index].qnt=newquantity
 setsavecart(newcartdata)
 
-await fetch(`https://newbook-fd60.onrender.com0/api/updatecart/${newcartdata[index]._id}`,{
+await fetch(`https://newbook-fd60.onrender.com/api/updatecart/${newcartdata[index]._id}`,{
 method:"Put",
 headers:{
     "content-type":"application/json"
@@ -109,7 +109,7 @@ discount
 
   const delcartproducts=async(id)=>{
 
-          const result = await fetch(`https://newbook-fd60.onrender.com0/api/dellproducts/${id}`, {
+          const result = await fetch(`https://newbook-fd60.onrender.com/api/dellproducts/${id}`, {
             method: "DELETE"
 
         })

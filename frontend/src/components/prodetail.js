@@ -42,7 +42,7 @@ const getid=()=>{
 const saveproget=async()=>{
 
 
-const saveprodata=await fetch(`https://newbook-fd60.onrender.com0/api/getproductdetail/${id}`,{
+const saveprodata=await fetch(`https://newbook-fd60.onrender.com/api/getproductdetail/${id}`,{
 method:"Get"
 
 
@@ -96,7 +96,7 @@ return;
     
 
 
-const cartresult=await fetch("https://newbook-fd60.onrender.com0/api/cartinfo",{
+const cartresult=await fetch("https://newbook-fd60.onrender.com/api/cartinfo",{
 
 
 method:"POST",
@@ -154,7 +154,7 @@ return;
     const wishlistdata={name,price,file,userid,proid}
     // alert(proid)
  
-    const wishlist= await fetch("https://newbook-fd60.onrender.com0/api/wishlist",{
+    const wishlist= await fetch("https://newbook-fd60.onrender.com/api/wishlist",{
 method:"POST",
 body:JSON.stringify(wishlistdata),
 headers:{

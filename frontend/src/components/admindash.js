@@ -30,7 +30,7 @@ useEffect(()=>{
 
       const proget=async()=>{
 
-const savedata=await fetch("https://newbook-fd60.onrender.com0/api/getdata",{
+const savedata=await fetch("https://newbook-fd60.onrender.com/api/getdata",{
     method:"Get"
 })
 
@@ -60,7 +60,7 @@ gett()
 
 const gett=async()=>{
 
-const result=await fetch("https://newbook-fd60.onrender.com0/api/getorderinfo",{
+const result=await fetch("https://newbook-fd60.onrender.com/api/getorderinfo",{
 
 method:"Get"
 
@@ -97,7 +97,7 @@ userget()
 
 const userget=async()=>{
 
-const result=await fetch("https://newbook-fd60.onrender.com0/api/getuserdata",{
+const result=await fetch("https://newbook-fd60.onrender.com/api/getuserdata",{
 
 method:"Get"
 
@@ -136,7 +136,7 @@ const [orders, setOrders] = useState([]);
 
 
 useEffect(() => {
-  fetch("https://newbook-fd60.onrender.com0/api/getorderinfo")
+  fetch("https://newbook-fd60.onrender.com/api/getorderinfo")
 .then(res => res.json())
     .then(data => setOrders(data.alldata));
     

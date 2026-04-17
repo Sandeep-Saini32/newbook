@@ -16,7 +16,7 @@ const check=async(e)=>{
 
 const logindata={loginemail,loginpass}
 
-const save=await fetch("https://newbook-fd60.onrender.com0/api/loginpage",{
+const save=await fetch("https://newbook-fd60.onrender.com/api/loginpage",{
 method:"post",
 body:JSON.stringify(logindata),
 headers:{
