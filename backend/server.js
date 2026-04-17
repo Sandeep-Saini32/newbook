@@ -31,10 +31,16 @@ const cloud=cloudinary.config({
 
 
 const mystorage=new CloudinaryStorage({
-    cloudinary:cloud,
+    cloudinary:cloudinary.config({
+   cloud_name:cloudName,
+   api_key:cloudinarykey,
+   api_secret:cloudniaryysecret
+
+
+}),
     params:{
         folder:"Bookstore",
-        allowed_format:["jpg","png","jpeg","webp"]
+        allowed_formats:["jpg","png","jpeg","webp"]
     }
 }) 
 
