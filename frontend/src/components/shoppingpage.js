@@ -14,7 +14,7 @@ proget()
 
     const proget=async()=>{
 
-const savedata=await fetch("http://localhost:9000/api/getdata",{
+const savedata=await fetch("https://newbook-fd60.onrender.com0/api/getdata",{
     method:"Get"
 })
 

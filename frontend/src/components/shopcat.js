@@ -17,7 +17,7 @@ proget()
 
     const proget=async()=>{
 
-const savecatdata=await fetch(`http://localhost:9000/api/cathomepro/${id}`,{
+const savecatdata=await fetch(`https://newbook-fd60.onrender.com0/api/cathomepro/${id}`,{
     method:"Get"
 })
 

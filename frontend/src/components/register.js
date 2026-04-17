@@ -19,7 +19,7 @@ const add=async(e)=>{
 
 const data={email,pass,name,phone}
 
-const show=await fetch("http://localhost:9000/api/signup",{
+const show=await fetch("https://newbook-fd60.onrender.com0/api/signup",{
 
     method:"post",
     body:JSON.stringify(data),

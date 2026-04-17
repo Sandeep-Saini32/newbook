@@ -25,7 +25,7 @@ export const Categories = () => {
 
     formdata.append("pic", file)
 
-        const result = await fetch("http://localhost:9000/api/addfile", {
+        const result = await fetch("https://newbook-fd60.onrender.com0/api/addfile", {
             method: "Post",
             body: formdata
 
@@ -61,7 +61,7 @@ setcategoryname("")
     }
 
     const gett = async () => {
-        const savedata = await fetch("http://localhost:9000/api/getfile", {
+        const savedata = await fetch("https://newbook-fd60.onrender.com0/api/getfile", {
             method: "Get"
 
         })
@@ -87,7 +87,7 @@ setcategoryname("")
 
 //     const dell=async(id)=>{
 
-//           const result = await fetch(`http://localhost:9000/api/dell/${id}`, {
+//           const result = await fetch(`https://newbook-fd60.onrender.com0/api/dell/${id}`, {
 //             method: "Delete"
 
 
@@ -142,7 +142,7 @@ const dell = async (id) => {
 
     if (result.isConfirmed) {
       try {
-        const response = await fetch(`http://localhost:9000/api/dell/${id}`, {
+        const response = await fetch(`https://newbook-fd60.onrender.com0/api/dell/${id}`, {
           method: "DELETE"
         });
 
@@ -203,7 +203,7 @@ const up=async(e)=>{
     formdata.append("pic", file)
 
 
-const result=await fetch(`http://localhost:9000/api/upcat/${id}`,{
+const result=await fetch(`https://newbook-fd60.onrender.com0/api/upcat/${id}`,{
 method:"Put",
 body:formdata,
 
