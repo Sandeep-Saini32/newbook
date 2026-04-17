@@ -8,7 +8,7 @@ const { runInNewContext } = require("vm")
 const app = express()
 
 const corsoption={
-    origin:"https://newbook-ofyv.vercel.app/",
+    origin:"https://newbook-ofyv.vercel.app",
     Credentials:true
 }
 
