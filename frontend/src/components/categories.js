@@ -372,7 +372,7 @@ else{
               <div className="shop-card-img">
                    <Link to={`/shopcat/?id=${a._id}`}>
                 <img
-                  src={`/uploads/${a.file}`}
+                  src={`${a.file}`}
                   alt="product"
                   className="shopimg"
                 />

@@ -493,7 +493,7 @@ return (
               <div className="shop-card-img">
                      <Link to={`/prodetail/?id=${a._id}`}>
                 <img
-                  src={`/uploads/${a.productfile}`}
+                  src={`/${a.productfile}`}
                   alt="product"
                   className="shopimg"
                 />

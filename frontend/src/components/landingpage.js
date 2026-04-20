@@ -486,7 +486,7 @@ return(
 
  <Link to={`/prodetail/?id=${a._id}`}> 
       <img
-        src={`https://res.cloudinary.com/dwtvuglpw/image/upload/v1776678242/Bookstore/puaetcskk3g3cjrbpghh.jpg`}
+        src={`${a.productfile}`}
         alt="Product"
         className="product-img"
       />
@@ -647,7 +647,7 @@ return(
 
  <Link to={`/prodetail/?id=${a._id}`}> 
       <img
-        src={`/uploads/${a.productfile}`}
+        src={`${a.productfile}`}
         alt="Product"
         className="product-img"
       />
