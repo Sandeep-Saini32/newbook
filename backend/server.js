@@ -629,7 +629,10 @@ else{
 // for getting fiction homepro
 
 app.get("/api/cathomepro",async(req,res)=>{
-const gethomeproduct=await productmodel.find({Category:"6960926524d17cb20ae74c68"}).limit(4)
+const gethomeproduct=await productmodel.find({Category:
+    // "6960926524d17cb20ae74c68"
+"69e5f530876af3b772cfb161"
+}).limit(4)
 
 if(gethomeproduct){
     res.send({statuscode:1,alldata:gethomeproduct})
