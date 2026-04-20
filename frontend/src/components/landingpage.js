@@ -416,7 +416,7 @@ return(
 
           <div className="category-img">
             <img 
-              src={`/uploads/${a.file}`} 
+              src={`${a.file}`} 
               alt=""
               className="img-fluid rounded-circle"
             />
