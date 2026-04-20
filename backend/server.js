@@ -155,7 +155,7 @@ app.post("/api/addfile",upload.single("pic"),async(req,res)=>{
         pic="default.webp"
     }
 else{
-    pic=req.file.filename
+    pic=req.file.path
 }
 let newrecord=new categorymodel({
 catname:req.body.name,
@@ -217,7 +217,7 @@ if(!req.file){
     pic=req.body.oldpic
 }
 else{
-    if( pic=req.file.filename){
+    if( pic=req.file.path){
   fs.unlink("public/uploads/"+req.body.oldpic,(err)=>{
         if(err){
             console.log("failed to unlink",err)
@@ -274,7 +274,7 @@ let pic
     pic="default.webp"
 }
 else{
-    pic=req.file.filename
+    pic=req.file.path
 }
 
 
@@ -345,7 +345,7 @@ if(!req.file){
 
 else{
     if(req.body.oldpic){
-            pic=req.file.filename
+            pic=req.file.path
     fs.unlink("public/uploads"+req.body.oldpic,(error)=>{
 
 if(error){
