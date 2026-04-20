@@ -486,7 +486,7 @@ return(
 
  <Link to={`/prodetail/?id=${a._id}`}> 
       <img
-        src={`/${a.productfile}.jpg`}
+        src={`${a.productfile}.jpg`}
         alt="Product"
         className="product-img"
       />
