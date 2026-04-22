@@ -114,7 +114,7 @@ if(cartresult.ok){
 
     const cr=await cartresult.json()
    if(cr.statuscode===1){
-    alert("added to cart")
+    // alert("added to cart")
 naviagte(`/cart`)
 
 

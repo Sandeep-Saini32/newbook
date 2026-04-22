@@ -42,19 +42,19 @@ if(savecart){
 const sct=await savecart.json()
 
 if(sct.statuscode===1){
-    alert("savecart fetched")
+    // alert("savecart fetched")
     setsavecart(sct.allcartdata)
 
 }
 
 else{
-    alert("savecart  not fetched")
+    // alert("savecart  not fetched")
 }
 
 }
 
 else{
-    alert("savecart error")
+    // alert("savecart error")
 }
 
 
@@ -112,14 +112,14 @@ if(result.ok){
 const res=await result.json()
 
 if(res.statuscode===1){
-    alert("checkout data stored")
+    // alert("checkout data stored")
  }
 else{
-    alert("checkout daTa not stored")
+    // alert("checkout daTa not stored")
 }
 }
 else{
-    alert("checkout error")
+    // alert("checkout error")
 }
 
 
