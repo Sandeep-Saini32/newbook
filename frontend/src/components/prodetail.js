@@ -193,7 +193,7 @@ return(
 
     <div className="d-block d-md-flex" id="quickView">
 
-<img src={`/uploads/${file}`} style={{height:"650px", width:"600px"}}></img>
+<img src={`${file}`} style={{height:"650px", width:"600px"}}></img>
 
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
