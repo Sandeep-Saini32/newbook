@@ -175,7 +175,7 @@ else{
 
               <div className="shop-card-img">
                 <img
-                  src={`/uploads/${a.productfile}`}
+                  src={`${a.productfile}`}
                   alt="product"
                   className="shopimg"
                 />

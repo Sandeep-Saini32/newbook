@@ -382,7 +382,7 @@ savecart.map((a,index)=>
                                     <li class="order-item">
                                         <a href="product-detail.html" class="img-prd">
                                            
-                                            <img class="lazyload" src={`/uploads/${a.file}`} alt={a.name} style={{height:"100px", width:"100px"}} />
+                                            <img class="lazyload" src={`${a.file}`} alt={a.name} style={{height:"100px", width:"100px"}} />
                                         </a>
                                         <div class="infor-prd">
                                             <h6 class="prd_name">
