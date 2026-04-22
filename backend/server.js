@@ -630,7 +630,7 @@ else{
 
 app.get("/api/cathomepro",async(req,res)=>{
 const gethomeproduct=await productmodel.find({Category:
-    // "6960926524d17cb20ae74c68"
+   
 "69e5f530876af3b772cfb161"
 }).limit(4)
 
@@ -650,7 +650,7 @@ else{
 // for getting mystery homepro
 
 app.get("/api/muysterypro",async(req,res)=>{
-const getmuysteryproduct=await productmodel.find({Category:"6960934524d17cb20ae74c71"}).limit(4)
+const getmuysteryproduct=await productmodel.find({Category:"69e8a2dc7302c1034c40ec4e"}).limit(4)
 
 
 if(getmuysteryproduct){
@@ -841,7 +841,7 @@ else{
 // for getting best homepro
 
 app.get("/api/bestpro",async(req,res)=>{
-const getbestproduct=await productmodel.find({Category:"6999e705e709326bfe10389f"})
+const getbestproduct=await productmodel.find({Category:"69e8a6617302c1034c40ec54"})
 
 
 if(getbestproduct){
