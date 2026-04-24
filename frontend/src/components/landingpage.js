@@ -535,7 +535,7 @@ return(
 
  <Link to={`/prodetail/?id=${a._id}`}> 
       <img
-        src={`/uploads/${a.productfile}`}
+        src={`${a.productfile}`}
         alt="Product"
         className="product-img"
       />
@@ -781,7 +781,7 @@ return(
 
  <Link to={`/prodetail/?id=${a._id}`}> 
       <img
-        src={`/uploads/${a.productfile}`}
+        src={`${a.productfile}`}
         alt="Product"
         className="product-img"
       />
