@@ -717,7 +717,7 @@ return(
                                      
                                         <div class="card-product_wrapper aspect-ratio-0 d-flex justify-content-center">
                                             <Link to={`/prodetail/?id=${a._id}`}> 
-                                          <img class="lazyload img-product" src={`/uploads/${a.productfile}`} alt="Product" style={{ height: "200px", width: "200px" }}/>
+                                          <img class="lazyload img-product" src={`${a.productfile}`} alt="Product" style={{ height: "200px", width: "200px" }}/>
                                                
                                          </Link> 
                                         </div>
