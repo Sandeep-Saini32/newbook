@@ -319,7 +319,7 @@ return (
                     <div class="content">
                         <h1 class="title-page">Products</h1>
                         <ul class="breadcrumbs-page">
-                            <li><Link to="/"class="h6 link">Home</Link></li>
+                            <li><Link to="/"class="h6 link">Dashboard</Link></li>
                             <li class="d-flex"><i class="icon icon-caret-right"></i></li>
                             <li>
                                 <h6 class="current-page fw-normal"><Link to="/categories">Categories</Link>  </h6>

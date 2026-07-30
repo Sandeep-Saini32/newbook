@@ -51,9 +51,7 @@ return(
                         <h1 class="title-page">Orders placed by Customers</h1>
                         <ul class="breadcrumbs-page">
 
-                            <Link to={"/admindash"}>
-                             <li><a href="index.html" class="h6 link">Dashboard</a></li>
-                            </Link>
+                             <li><Link to="/"class="h6 link">Dashboard</Link></li>
                            
                             <li class="d-flex"><i class="icon icon-caret-right"></i></li>
                             <li>
