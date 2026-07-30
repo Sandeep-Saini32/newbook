@@ -21,18 +21,21 @@ import { Faq } from "./faq"
 import { Aheader } from "./adminheader"
 import { Admindash } from "./admindash"
 import { Shopcat } from "./shopcat"
+import { useContext } from "react"
+import { Usercontext } from "./context"
 
 
 
 
 export const Routerr=()=>{
 
+const {usertype}=useContext(Usercontext)
 
 return(
     <>
     <Routes>
 
-<Route path="/" element={<Landingpage/>} />
+<Route path="/" element={ usertype==="admin"?<Admindash/>:<Landingpage/>} />
 <Route path="/signup" element={<Register/>} />
 <Route path="/login" element={<Login/>} />
 <Route path="/categories" element={<Categories/>}></Route>

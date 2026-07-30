@@ -42,7 +42,7 @@ localStorage.setItem("adminemail",sv.email)
     setusertype(sv.role)
     setid(sv.id)
 
-    if(sv.role=="admin"){
+    if(sv.role==="admin"){
         navigate("/admindash")
     }
     else{

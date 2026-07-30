@@ -51,7 +51,7 @@ else{
                     <div class="content">
                         <h1 class="title-page">Shop </h1>
                         <ul class="breadcrumbs-page">
-                            <li><a href="index.html" class="h6 link">Home</a></li>
+                             <li><Link to="/" class="h6 link">Home</Link></li>
                             <li class="d-flex"><i class="icon icon-caret-right"></i></li>
                             <li>
                                 <h6 class="current-page fw-normal">Shop</h6>
